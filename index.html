@@ -1833,38 +1833,28 @@
     <section id="best-practices" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
-                <h2>Best Practices for Data Visualization</h2>
-                <p id="right-chart-mid">Data visualization is a mix of science and art. There are some basic guidelines
-                    and best practices rooted in our understanding of cognitive psychology, statistics, and
-                    human-computer interaction, but these also reflect preferences for different colors, typefaces,
-                    layouts, and more.</p>
+                <h2>データ可視化のベストプラクティス</h2>
+                <p id="right-chart-mid">
+                    データ可視化は科学と芸術の融合です。認知心理学、統計学、ヒューマンコンピュータインタラクションの理解に基づいた基本的なガイドラインやベストプラクティスがいくつかありますが、これらは様々な色、書体、レイアウトなどの好みも反映しています。
+                </p>
 
-                <h3 id="right-chart">What Is the Right Chart for Your Data?</h3>
-                <p>Stop! Should it even be a chart?</p>
+                <h3 id="right-chart">あなたのデータに適したチャートは？</h3>
+                <p>ちょっと待ってください！それは本当にチャートにする必要がありますか？</p>
 
-                <p>Although charts are great for communicating data, they are not the appropriate tool for every
-                    situation. If you find explanatory sentences do a better job of distilling the information you want
-                    to convey, consider going without a chart. If your main goal is to present detailed information as
-                    opposed to showing patterns, or if it’s important that the reader can accurately determine the
-                    values of your data, consider using a table instead. You may also find that simply including a
-                    single, large number (commonly known as “<a
+                <p>チャートはデータを伝達するのに最適ですが、あらゆる状況に適したツールというわけではありません。説明文の方が伝えたい情報をうまく抽出できる場合は、チャートを使わないことを検討してください。パターンを示すのではなく詳細な情報を提示することが主な目的である場合や、読者がデータの値を正確に判断できることが重要である場合は、代わりに表を使用することを検討してください。単一の大きな数字（一般に「<a
                         href="https://policyviz.com/2023/07/13/the-power-of-big-aggregate-numbers/" target="_blank">big
-                        aggregate numbers</a>”) may be sufficient. In these cases, inserting a simple text box or shape
-                    in your PowerPoint or Word document will work.</p>
+                        aggregate
+                        numbers</a>」として知られています）を含めるだけで十分な場合もあります。このような場合は、PowerPointやWord文書に単純なテキストボックスや図形を挿入するだけで済みます。
+                </p>
 
-                <p>Selecting the appropriate chart type for your data and the message you want to convey is critical to
-                    creating a successful data visualization. The table below offers guidance on what types of charts
-                    are best suited for different purposes. However, this is not an infallible set of choices, because
-                    there is not a one-to-one relationship between data types and graph types; for example, a vertical
-                    bar chart can be used to compare categories or show changes over time. The list below should
-                    therefore be viewed as a starting resource to guide the graph creator. If you are unsure, reach out
-                    to the Data Visualization team to help explore your options.</p>
+                <p>データと伝えたいメッセージに適したチャートの種類を選択することは、データ可視化を成功させるために不可欠です。下の表は、さまざまな目的に最適なチャートの種類に関するガイダンスを提供しています。ただし、データの種類とグラフの種類には1対1の関係がないため、これは絶対的な選択肢ではありません。たとえば、縦棒グラフは、カテゴリを比較するためにも、時間の経過に伴う変化を示すためにも使用できます。したがって、以下のリストは、グラフ作成者をガイドするための出発点となるリソースとして表示する必要があります。よくわからない場合は、Data
+                    Visualizationチームに連絡して、オプションを検討する手助けを求めてください。</p>
 
                 <table class="type-table" border="0" cellspacing="10px" cellpadding="10px" align="center">
                     <tbody>
                         <tr style="text-transform:Uppercase; font-weight:bold; border-bottom:1px solid #000;">
                             <td valign="bottom">
-                                <p>I want to...</p>
+                                <p>〜をしたい...</p>
                             </td>
                             <td valign="bottom">
                             </td>
@@ -1872,73 +1862,74 @@
 
                         <tr>
                             <td valign="top">
-                                <p>Compare values or rankings</p>
+                                <p>値やランキングを比較する</p>
                             </td>
                             <td valign="top">
                                 <ul>
-                                    <li><a href="#bar-charts">Bar charts</a></li>
-                                    <li><a href="#dot-plots">Dot plots</a></li>
+                                    <li><a href="#bar-charts">棒グラフ (Bar charts)</a></li>
+                                    <li><a href="#dot-plots">ドットプロット (Dot plots)</a></li>
                                 </ul>
                             </td>
                         </tr>
 
                         <tr>
                             <td valign="top">
-                                <p>Show trends or change over time</p>
+                                <p>傾向や経時的な変化を示す</p>
                             </td>
                             <td valign="top">
                                 <ul>
-                                    <li><a href="#area-charts">Area charts</a></li>
-                                    <li><a href="#bar-charts">Bar charts</a></li>
-                                    <li><a href="#connected-scatterplots">Connected scatterplots</a></li>
-                                    <li><a href="#dot-plots">Dot plots</a></li>
-                                    <li><a href="#gantt-charts">Gantt charts</a></li>
-                                    <li><a href="#line-charts">Line charts</a></li>
-                                    <li><a href="#slope-charts">Slope charts</a></li>
-                                    <li><a href="#sparklines">Sparklines</a></li>
+                                    <li><a href="#area-charts">面グラフ (Area charts)</a></li>
+                                    <li><a href="#bar-charts">棒グラフ (Bar charts)</a></li>
+                                    <li><a href="#connected-scatterplots">コネクテッド散布図 (Connected scatterplots)</a></li>
+                                    <li><a href="#dot-plots">ドットプロット (Dot plots)</a></li>
+                                    <li><a href="#gantt-charts">ガントチャート (Gantt charts)</a></li>
+                                    <li><a href="#line-charts">折れ線グラフ (Line charts)</a></li>
+                                    <li><a href="#slope-charts">スロープチャート (Slope charts)</a></li>
+                                    <li><a href="#sparklines">スパークライン (Sparklines)</a></li>
                                 </ul>
                             </td>
                         </tr>
 
                         <tr>
                             <td valign="top">
-                                <p>Depict a part-to-whole relationship</p>
+                                <p>全体に対する部分の関係を描写する</p>
                             </td>
                             <td valign="top">
                                 <ul>
-                                    <li><a href="#pie-charts">Pie/donut charts</a></li>
-                                    <li><a href="#stacked-bar-charts">Stacked bar charts</a></li>
-                                    <li><a href="#area-charts">Stacked area charts</a></li>
-                                    <li><a href="#treemaps">Tree maps</a></li>
-                                    <li><a href="#unit-waffle-charts">Unit/waffle charts</a></li>
+                                    <li><a href="#pie-charts">円グラフ/ドーナツチャート (Pie/donut charts)</a></li>
+                                    <li><a href="#stacked-bar-charts">積み上げ棒グラフ (Stacked bar charts)</a></li>
+                                    <li><a href="#area-charts">積み上げ面グラフ (Stacked area charts)</a></li>
+                                    <li><a href="#treemaps">ツリーマップ (Tree maps)</a></li>
+                                    <li><a href="#unit-waffle-charts">ユニット/ワッフルチャート (Unit/waffle charts)</a></li>
                                 </ul>
                             </td>
                         </tr>
 
                         <tr>
                             <td valign="top">
-                                <p>Show deviation from a reference point</p>
+                                <p>基準点からの逸脱を示す</p>
                             </td>
                             <td valign="top">
                                 <ul>
-                                    <li><a href="#bubble-charts">Bubble charts</a></li>
-                                    <li><a href="#heatmaps">Heatmaps</a></li>
-                                    <li><a href="#scatterplots">Scatterplots</a></li>
+                                    <li><a href="#bubble-charts">バブルチャート (Bubble charts)</a></li>
+                                    <li><a href="#heatmaps">ヒートマップ (Heatmaps)</a></li>
+                                    <li><a href="#scatterplots">散布図 (Scatterplots)</a></li>
                                 </ul>
                             </td>
                         </tr>
 
                         <tr>
                             <td valign="top">
-                                <p>Show the distribution of values</p>
+                                <p>値の分布を示す</p>
                             </td>
                             <td valign="top">
                                 <ul>
-                                    <li><a href="#beeswarm">Beeswarm charts</a></li>
-                                    <li><a href="#box-whisker-plots">Box and whisker plots</a></li>
-                                    <li><a href="#fan-confidence-plots">Fan/confidence interval plots</a></li>
-                                    <li><a href="#histograms">Histograms</a></li>
-                                    <li><a href="#strip-charts">Strip charts</a></li>
+                                    <li><a href="#beeswarm">ビースウォームチャート (Beeswarm charts)</a></li>
+                                    <li><a href="#box-whisker-plots">箱ひげ図 (Box and whisker plots)</a></li>
+                                    <li><a href="#fan-confidence-plots">ファンチャート/信頼区間プロット (Fan/confidence interval
+                                            plots)</a></li>
+                                    <li><a href="#histograms">ヒストグラム (Histograms)</a></li>
+                                    <li><a href="#strip-charts">ストリップチャート (Strip charts)</a></li>
                                 </ul>
                             </td>
                         </tr>
