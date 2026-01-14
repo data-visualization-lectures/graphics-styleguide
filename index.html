@@ -2437,35 +2437,53 @@
                         In a single chart, try to keep the maximum number of lines to no more than five or six. Plotting
                         too many lines on the same chart can be confusing and clutter the message.
                     </li>
+                    <h3>折れ線グラフ (Line Charts) <a href="#right-chart-mid">^</a></h3>
+                    <h4>折れ線グラフを使用する場合</h4>
                     <ul>
-                        <li>
-                            An important exception is the case where you may want to plot a lot of lines but only add
-                            color (and/or change the line thickness) to specific lines. For example, the graph below
-                            shows the annual poverty rate for all 50 states and Washington, DC for the 2008-2021 period,
-                            but highlights the lines for the areas with the biggest declines (Delaware, Washington, DC,
-                            and Idaho). In such cases, the other lines can be made a thinner and in a lighter gray color
-                            while the three areas of interest made slightly thicker and in Urban colors.
-                        </li>
-                        <li>
-                            This can be more easily done using the “Start With Gray” option in the Urban Excel add-in
-                            tool.
+                        <li>1つ以上の指標の傾向（通常は時間の経過に伴う傾向）を示す場合。
                         </li>
                     </ul>
-                    <li>
-                        When necessary, legends should be stretched across the top of the chart and the order should
-                        match the order of the lines in the chart.
-                    </li>
-                    <li>
-                        As noted above, avoid dual axis line charts whenever possible. In such cases, consider another
-                        chart type, such as two separate line charts or a connected scatterplot.
-                    </li>
-                </ul>
-                <img src="img/LineChart.png" width="100%" class="example-chart"
-                    alt="Line chart that shows how second-lien debt rose since 2001 after more than a decade of decline, but still remains smaller than levels before 2008. " />
-                <br />&nbsp;<br />
-                <img src="img/PovertyRates.png" width="100%" class="example-chart"
-                    alt="Line chart showing poverty rates for all 50 US states and Washington, DC. Delaware, Washington, DC, and Idaho saw the largest declines over the period and are shown in color while the other states are shown in gray lines." />
-                <br />&nbsp;<br />
+
+                    <h4>スタイルのヒント</h4>
+                    <ul>
+                        <li>
+                            可能な場合は、データシリーズに直接ラベルを付けます。線があまりにも接近している場合やラベルが長すぎる場合は、タイトルの下の水平な凡例が望ましいです。
+                        </li>
+                        <li>
+                            長い時系列の個々のデータマーカーは避けてください。以下の例では、線が本質的に平行であるため、データマーカーが追加されています。
+                        </li>
+                        <ul>
+                            <li>
+                                折れ線グラフにデータマーカーが含まれている場合、Urbanでは通常、円を使用します。
+                            </li>
+                            <li>
+                                Urbanのスタイルでは、データマーカーを含めるべき時期を決定するための特定のデータポイント数や線の数を定義していません。
+                            </li>
+                        </ul>
+                        <li>
+                            1つのチャートでは、線の最大数を5本または6本以内に抑えるようにしてください。同じチャートにあまりにも多くの線をプロットすると、混乱を招き、メッセージが乱雑になる可能性があります。
+                        </li>
+                        <ul>
+                            <li>
+                                重要な例外は、多くの線をプロットしたいが、特定の線にのみ色を追加したり（および/または線の太さを変更したり）する場合です。たとえば、以下のグラフは、2008年から2021年までの全50州とワシントンD.C.の年間貧困率を示していますが、最も減少幅の大きい地域（デラウェア州、ワシントンD.C.、アイダホ州）の線を強調しています。このような場合、他の線はより細く、より薄い灰色にすることができ、関心のある3つの地域はわずかに太く、Urbanの色にすることができます。
+                            </li>
+                            <li>
+                                これは、Urban Excelアドインツールの「Start With Gray」オプションを使用すると、より簡単に行うことができます。
+                            </li>
+                        </ul>
+                        <li>
+                            必要に応じて、凡例はチャートの上部に広げ、順序はチャート内の線の順序と一致させる必要があります。
+                        </li>
+                        <li>
+                            上記のように、可能な限り二重軸折れ線グラフは避けてください。そのような場合は、2つの別々の折れ線グラフや接続散布図など、別のチャートタイプを検討してください。
+                        </li>
+                    </ul>
+                    <img src="img/LineChart.png" width="100%" class="example-chart"
+                        alt="Line chart that shows how second-lien debt rose since 2001 after more than a decade of decline, but still remains smaller than levels before 2008. " />
+                    <br />&nbsp;<br />
+                    <img src="img/PovertyRates.png" width="100%" class="example-chart"
+                        alt="Line chart showing poverty rates for all 50 US states and Washington, DC. Delaware, Washington, DC, and Idaho saw the largest declines over the period and are shown in color while the other states are shown in gray lines." />
+                    <br />&nbsp;<br />
 
 
 
@@ -2474,56 +2492,49 @@
 
             <div id="sparklines" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Sparklines <a href="#right-chart-mid">^</a></h3>
+                <h3>スパークライン (Sparklines) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    Sparklines are small line charts, typically embedded in a table at the end of a row or column.
+                    スパークラインは小さな折れ線グラフで、通常は行または列の端にある表に埋め込まれます。
                 </p>
 
-                <h4>When to Use Sparklines</h4>
+                <h4>スパークラインを使用する場合</h4>
                 <ul>
-                    <li>To visualize trends or changes without taking up much space.</li>
+                    <li>多くのスペースを取らずに傾向や変化を視覚化する場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Marking the first, last, highest, and/or lowest points in a sparkline can direct the reader’s
-                        attention or highlight key data points.</li>
-                    <li>Creating sparklines in Excel is quite easy (Insert &gt; Sparklines), but they tend to look
-                        blurry when exported. Consider using other tools like Datawrapper or R.</li>
+                    <li>スパークラインの最初、最後、最高、または最低のポイントをマークすると、読者の注意を向けたり、主要なデータポイントを強調したりできます。</li>
+                    <li>Excelでスパークラインを作成するのは非常に簡単です（挿入 >
+                        スパークライン）が、エクスポートするとぼやけて見える傾向があります。DatawrapperやRなどの他のツールを使用することを検討してください。</li>
                 </ul>
-                <img src="img/sparklines.png" class="example-chart example-chart-sm"
+                <img src="img/sparklines.png" width="100%" class="example-chart example-chart-sm"
                     alt="Table that shows the share of homeowners with a mortgage in 1989 and 2022 across six different age groups. A set of small line charts shows the trend over the entire period." />
 
             </div>
 
             <div id="slope-charts" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Slope Charts <a href="#right-chart-mid">^</a></h3>
+                <h3>スロープチャート (Slope Charts) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    A slope chart is a useful alternative to a paired bar chart, which requires readers to make multiple
-                    comparisons simultaneously (level and difference between and within groups).
+                    スロープチャートは、読者が複数の比較（グループ間およびグループ内のレベルと差分）を同時に行う必要があるペア棒グラフの有用な代替手段です。
                 </p>
-                <h4>When to Use a Slope Chart</h4>
+                <h4>スロープチャートを使用する場合</h4>
                 <ul>
-                    <li>To show before-and-after comparisons in a straightforward way.</li>
-                    <li>To compare two values, not just changes over time. These charts are typically called “parallel
-                        coordinates plots” but, structurally, they are identical to slope charts.</li>
+                    <li>前後比較を直接的に示す場合。</li>
+                    <li>経時的な変化だけでなく、2つの値を比較する場合。これらのチャートは通常「平行座標プロット (parallel coordinates
+                        plots)」と呼ばれますが、構造的にはスロープチャートと同じです。</li>
                 </ul>
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Because a slope chart shows only two data points, the data shown should either (a) only be
-                        available for those two years or (b) be monotonically moving in that direction. You wouldn’t
-                        want to use a slope chart (or a paired bar chart, for that matter) to show a downward trend when
-                        the true data show an increase and then a decrease.</li>
-                    <li>Colors can be used in multiple ways in a slope chart: individual color for each line, gray for
-                        several lines and color to highlight certain lines, or one color for groups that are increasing
-                        and another for groups that are decreasing.</li>
-                    <li>At times, slope charts are better <a
+                    <li>スロープチャートは2つのデータポイントのみを表示するため、表示されるデータは (a) その2年間のみ利用可能であるか、(b)
+                        その方向に単調に移動している必要があります。実際のデータが増加してから減少している場合に、減少傾向を示すためにスロープチャート（またはペア棒グラフ）を使用したくはないでしょう。</li>
+                    <li>色はスロープチャートで複数の方法で使用できます：各線に個別の色、いくつかの線にはグレーで特定の線を強調するために色を使用、または増加しているグループに1つの色、減少しているグループに別の色を使用するなど。
+                    </li>
+                    <li>時には、スロープチャートは標準のUrbanサイズ寸法よりも<a
                             href="https://www.urban.org/sites/default/files/publication/90761/tanf_cash_welfare_final2_1.pdf"
-                            target="_blank">made taller</a> than in the standard Urban size dimensions. Consider working
-                        with the data visualization team to make that determination.</li>
-                    <li>The example below shows how converting the stacked vertical bar to a slope chart provides a
-                        different perspective of the data and facilitates easier comparisons between the two categories.
+                            target="_blank">高く作成される</a>方が良い場合があります。その決定を行うために、データ可視化チームと協力することを検討してください。</li>
+                    <li>以下の例は、積み上げ縦棒グラフをスロープチャートに変換することで、データの異なる視点を提供し、2つのカテゴリ間の比較を容易にする方法を示しています。
                     </li>
                 </ul>
                 <img src="img/stacked-bar-chart-for-slope-chart.png" width="100%" class="example-chart"
@@ -2542,59 +2553,46 @@
             <div id="area-charts" class="col-lg-10 col-lg-offset-1">
 
                 <hr class="divider" />
-                <h3>Area Charts <a href="#right-chart-mid">^</a></h3>
-                <h4>When to use an area chart</h4>
+                <h3>面グラフ (Area Charts) <a href="#right-chart-mid">^</a></h3>
+                <h4>面グラフを使用する場合</h4>
                 <ul>
-                    <li>To show a trend in composition of a group or groups over time. </li>
-                    <li>To display the part-to-whole relationship of categories, as well as totals.
+                    <li>グループまたはグループの構成の経時的な変化の傾向を示す場合。 </li>
+                    <li>カテゴリの全体に対する部分の関係と、合計を表示する場合。
                     </li>
-                    <li>When you want to compare different groups or show the change in the composition of groups over
-                        time, but the data is not in a continuous time series, consider using a stacked a column chart.
+                    <li>異なるグループを比較したい場合、またはグループ構成の経時的な変化を示したいが、データが連続した時系列ではない場合は、積み上げ棒グラフの使用を検討してください。
                     </li>
                 </ul>
 
-                <h4>Style tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li> Basic guidance is to start the vertical (y-) axis at zero for area charts. While there is <a
-                            href="https://qz.com/418083/its-ok-not-to-start-your-y-axis-at-zero" target="_blank">some
-                            debate about this recommendation</a>, Urban views it as a starting point that can be altered
-                        with additional discussion.
+                    <li> 基本的なガイダンスは、面グラフの垂直（y-）軸をゼロから始めることです。<a
+                            href="https://qz.com/418083/its-ok-not-to-start-your-y-axis-at-zero"
+                            target="_blank">この推奨事項については議論があります</a>が、Urbanでは、追加の議論で変更できる出発点と見なしています。
                     </li>
                     <li>
-                        When possible, directly label the series. If space is an issue, consider adding them off to the
-                        right of the graph, preferably matching the color of the data series. If the labels are too
-                        small or there are too many data series, use a legend positioned horizontally along the top of
-                        the chart.
+                        可能な場合は、シリーズに直接ラベルを付けます。スペースが問題になる場合は、グラフの右側に追加することを検討してください。できればデータシリーズの色と一致させてください。ラベルが小さすぎる場合やデータシリーズが多すぎる場合は、チャートの上部に水平に配置された凡例を使用してください。
                     </li>
                     <li>
-                        In a single chart, avoid plotting too many series—more than five or six—because too many
-                        categories generate a confusing picture.
+                        1つのチャートでは、あまりにも多くのシリーズ（5つか6つ以上）をプロットすることは避けてください。カテゴリが多すぎると、混乱を招く図になります。
                     </li>
                     <li>
-                        Sequential series can be shaded from lightest to darkest for easy comparison.
+                        シーケンシャル（順序）シリーズは、比較しやすいように、最も明るい色から最も暗い色へと濃淡をつけることができます。
                     </li>
                     <li>
-                        Order the segments of the chart in a logical fashion. It is easier for readers to compare values
-                        for the series that sits directly on the horizontal axis—because the baseline doesn’t change
-                        over time. Thus, that series should either be (a) the most important series or (b) the series
-                        with the largest values.
+                        チャートのセグメントを論理的な方法で順序付けます。水平軸に直接接しているシリーズの値は、ベースラインが経時的に変化しないため、読者が比較するのが容易です。したがって、そのシリーズは (a)
+                        最も重要なシリーズ、または (b) 最大の値を持つシリーズのいずれかであるべきです。
                     </li>
                     <li>
-                        When plotting time years (e.g., years) along the x-axis, the typical approach is to use round
-                        numbers in intervals of one, two, five, or ten. Custom labels can be added when using round
-                        increments but would end on an odd year. For example, an axis extends from 2000 to 2024 and
-                        shows increments in every five years; in this case, a custom label could be added for 2024 at
-                        the end of the graph.
+                        x軸に沿って時間（例：年）をプロットする場合の一般的なアプローチは、1、2、5、または10の間隔で丸い数字を使用することです。丸い増分を使用するが奇数年で終わる場合は、カスタムラベルを追加できます。たとえば、軸が2000年から2024年まで伸びており、5年ごとの増分を示している場合、グラフの最後に2024年のカスタムラベルを追加できます。
                     </li>
                     <ul>
                         <li>
-                            When using round increments are difficult to fit in the graph, consider using abbreviations
-                            for the dates, such as “’90” for annual data or “Jan 1990” for monthly data.
+                            丸い増分をグラフに収めるのが難しい場合は、年間データの場合は「’90」、月次データの場合は「Jan 1990」などの日付の省略形を使用することを検討してください。
                         </li>
                     </ul>
                     <li>
-                        In the graph below, notice the use of “Trillions of dollars” in the subtitle area to define the
-                        y-axis labels, rather than writing out the full number with all of the zeros.
+                        以下のグラフでは、すべてのゼロを含む完全な数字を書き出すのではなく、y軸のラベルを定義するためにサブタイトル領域に「数兆ドル (Trillions of
+                        dollars)」を使用していることに注目してください。
                     </li>
                 </ul>
 
@@ -2609,25 +2607,20 @@
 
             <div id="gantt-charts" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Gantt Charts <a href="#right-chart-mid">^</a></h3>
+                <h3>ガントチャート (Gantt Charts) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    At its core, a Gantt chart is a type of bar chart where each bar represents a task, with the start
-                    and end points indicating the beginning and completion of the time period. At Urban, Gantt charts
-                    often appear in project proposals to record different phases of a research project.
+                    ガントチャートは、その核心において、各棒がタスクを表し、開始点と終了点が期間の開始と完了を示す一種の棒グラフです。Urbanでは、研究プロジェクトのさまざまなフェーズを記録するために、プロジェクト提案書にガントチャートが頻繁に登場します。
                 </p>
-                <h4>When to Use a Gantt Chart</h4>
+                <h4>ガントチャートを使用する場合</h4>
                 <ul>
-                    <li>To plan or track project timelines, showing tasks, durations, and dependencies.</li>
-                    <li>To visualize schedules, progress, and overlapping activities in project management.</li>
+                    <li>タスク、期間、依存関係を示して、プロジェクトのタイムラインを計画または追跡する場合。</li>
+                    <li>プロジェクト管理におけるスケジュール、進捗状況、重複するアクティビティを視覚化する場合。</li>
                 </ul>
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>In project proposals, filling the cells in a table built in Microsoft Word or Excel can be a
-                        sufficient Gantt chart.</li>
-                    <li>Organize tasks logically: group related tasks and arrange them in chronological or priority
-                        order for easy navigation.</li>
-                    <li>Gantt charts can be extended by modifying the width of the bars to denote another variable, such
-                        as the budget for each task.</li>
+                    <li>プロジェクト提案書では、Microsoft WordまたはExcelで作成された表のセルを塗りつぶすだけで十分なガントチャートになる場合があります。</li>
+                    <li>タスクを論理的に整理します：関連するタスクをグループ化し、ナビゲーションを容易にするために時系列または優先順位で並べます。</li>
+                    <li>ガントチャートは、各タスクの予算など、別の変数を示すために棒の幅を変更することで拡張できます。</li>
                 </ul>
                 <img src="img/gantt.png" width="100%" class="example-chart"
                     alt="Table showing 12 tasks in the rows across 16 months in the columns, from September 2024 to December 2025. Certain cells are filled in blue or yellow to denote when each task is being conducted." />
