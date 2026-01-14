@@ -3000,128 +3000,94 @@
     <section id="maps" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
-                <h2>Maps</h2>
+                <h2>地図 (Maps)</h2>
 
-                <p>There are obvious advantages to plotting geographic data on a map—people can find themselves and
-                    their communities, they can see the pattern across a state or country, and they are generally
-                    familiar to readers. However, one should approach the desire of creating a map with skepticism and
-                    critical thought. Is a map the best way to present geographic data? Or is the map simply showing
-                    where people live? Does it show interesting relationships to explore or simply relying on the fact
-                    that a map can be familiar to readers? </p>
-                <p>Whether to create a map and which kind of map to use will depend on two questions: How important are
-                    the geographic patterns in the data? And how important is it for the reader to see a familiar map?
+                <p>地理的データを地図上にプロットすることには明らかな利点があります。人々は自分自身や自分のコミュニティを見つけることができ、州や国全体のパターンを確認でき、一般的に読者にとって馴染み深いものです。しかし、地図を作成したいという願望には、懐疑心と批判的思考を持ってアプローチすべきです。地図は地理的データを提示するための最良の方法でしょうか？それとも、地図は単に人々がどこに住んでいるかを示しているだけでしょうか？探求すべき興味深い関係を示しているのでしょうか、それとも単に地図が読者にとって馴染み深いという事実に依存しているだけでしょうか？
                 </p>
-                <p>A longer version of this section—along with Urban-specific guidance on creating maps in Excel,
-                    Datawrapper, and R—can be found at the <a
+                <p>地図を作成するかどうか、そしてどの種類の地図を使用するかは、2つの質問に依存します。データ内の地理的パターンはどれほど重要か？そして、読者が馴染みのある地図を見ることがどれほど重要か？
+                </p>
+                <p>このセクションの詳細版（Excel、Datawrapper、Rでの地図作成に関するUrban固有のガイダンスを含む）は、<a
                         href="https://ui-research.github.io/code-library/mapping/mapping.html"
-                        target="_blank">Code@Urban Github page</a>.</p>
+                        target="_blank">Code@Urban Githubページ</a>にあります。</p>
 
-                <h3>Should you use a map to visualize your data? </h3>
+                <h3>データを可視化するために地図を使用すべきですか？ (Should you use a map to visualize your data?)</h3>
 
-                <p>The overarching challenge with creating data-driven maps is that the familiarity of the map does not
-                    necessarily accurately represent the data being plotted. Take, for example, the US presidential
-                    election. What matters in the election is the number of electoral votes for each state, which
-                    directly corresponds to the number of people living in the state, not the state’s land area. So, for
-                    example, Wyoming, Idaho, and Montana are more than 325,000 square miles of the country and currently
-                    have 11 electoral votes. Massachusetts, by comparison, is about 7,800 square miles or less than 2.5
-                    percent of the other three states, but itself also has 11 electoral votes. To address this imbalance
-                    between land size and the importance of the geography in the data, cartograms are one alternative to
-                    the standard maps. </p>
+                <p>データ駆動型の地図を作成する際の全体的な課題は、地図の親しみやすさが必ずしもプロットされているデータを正確に表しているとは限らないことです。たとえば、米国の大統領選挙を例に挙げてみましょう。選挙で重要なのは各州の選挙人の数であり、これは州の土地面積ではなく、州に住んでいる人の数に直接対応しています。たとえば、ワイオミング州、アイダホ州、モンタナ州は国土の325,000平方マイル以上を占めていますが、現在の選挙人数は11人です。比較すると、マサチューセッツ州は約7,800平方マイルで、他の3州の2.5パーセント未満ですが、それ自体も11人の選挙人を持っています。土地の大きさとデータにおける地理の重要性との間のこの不均衡に対処するために、カルトグラム（cartograms）は標準的な地図の1つの代替案となります。
+                </p>
 
-                <p>Cartograms reshape geographic areas based on the data values. They might use differently-sized
-                    circles or squares for each state, or similarly-sized shapes to correspond to data elements. In his
-                    book <a href="https://amzn.to/3XRyrxx" target="_blank">Cartography</a>, Kenneth Field summarizes the
-                    purpose of cartograms: </p>
+                <p>カルトグラムは、データ値に基づいて地理的領域を再形成します。各州に異なるサイズの円や正方形を使用したり、データ要素に対応するために同様のサイズの形状を使用したりする場合があります。ケネス・フィールド氏は著書『<a
+                        href="https://amzn.to/3XRyrxx" target="_blank">Cartography</a>』の中で、カルトグラムの目的を次のように要約しています。</p>
 
                 <blockquote>
-                    The intent of most thematic maps is to provide the reader with a map from which comparisons can be
-                    made, and so geography is almost always inappropriate. This fact alone creates problems for
-                    perception and cognition. Accounting for these problems might be addressed in many ways such as
-                    manipulating the data itself. Alternatively, instead of changing the data and maintaining the
-                    geography, you can retain the data values but modify the geography to create a cartogram.
+                    ほとんどの主題図の意図は、比較を行うことができる地図を読者に提供することであり、そのため地理はほとんどの場合不適切です。この事実だけでも、知覚と認知の問題が生じます。これらの問題を解決するには、データ自体を操作するなど、さまざまな方法があります。あるいは、データを変更して地理を維持する代わりに、データ値を保持しつつ地理を変更してカルトグラムを作成することもできます。
                 </blockquote>
 
-                <h3>Map Projections </h3>
+                <h3>地図投影法 (Map Projections)</h3>
 
-                <p>There are myriad maps to choose from to create a data visualization. Geographic units on a map (e.g.,
-                    states or counties) can be colored differently (i.e., “choropleth maps”) or can include different
-                    shapes such as dots or lines. Furthermore, there are hundreds of different map projections to choose
-                    from, all of which are attempting to take the three-dimensional spherical shape of the earth and
-                    flatten it to two dimensions.
+                <p>データ視覚化を作成するために選択できる地図は無数にあります。地図上の地理的単位（例：州や郡）は、異なる色で塗り分けたり（つまり「コロプレスマップ」）、点や線などの異なる形状を含めたりすることができます。さらに、選択できる地図投影法は何百もあり、そのすべてが地球の3次元の球形を2次元に平坦化しようとしています。
                 </p>
-                <p>Depending on the purpose and content, maps should use different projections. US maps for print
-                    publication, or use in Urban reports should use the Albers Equal Area projection. Simple interactive
-                    <a href="https://www.urban.org/data-tools/does-snap-cover-cost-meal-your-county-2022"
-                        target="_blank">county-level</a> or <a
+                <p>目的と内容に応じて、地図は異なる投影法を使用する必要があります。印刷物やUrbanのレポートで使用する米国の地図は、アルベルス正積円錐図法（Albers Equal Area
+                    projection）を使用する必要があります。シンプルなインタラクティブな<a
+                        href="https://www.urban.org/data-tools/does-snap-cover-cost-meal-your-county-2022"
+                        target="_blank">郡レベル</a>または<a
                         href="https://www.urban.org/projects/how-much-would-poverty-decrease-each-state-if-every-eligible-person-received-safety-net"
-                        target="_blank">state-level</a> maps also typically use the Albers projection. <a
+                        target="_blank">州レベル</a>の地図も、通常はアルベルス図法を使用します。一方、<a
                         href="https://www.urban.org/data-tools/where-are-children-head-start-exposed-environmental-hazards"
-                        target="_blank">Zoomable tile-based interactive maps</a>, on the other hand, tend to use the
-                    Mercator projection.
+                        target="_blank">ズーム可能なタイルベースのインタラクティブマップ</a>は、メルカトル図法を使用する傾向があります。
                 </p>
 
-                <h3>Different Kinds of Maps </h3>
+                <h3>さまざまな種類の地図 (Different Kinds of Maps)</h3>
 
-                <p>Once you have decided that a map is the best solution for your data, the next question is what kind
-                    of map are you going to create? Urban typically produces three kinds of maps:</p>
+                <p>地図がデータにとって最適なソリューションであると判断したら、次はどのような種類の地図を作成するかという質問になります。Urbanは通常、3種類の地図を作成します。</p>
                 <ul>
                     <li>
-                        <strong>Choropleth maps</strong>. A map that uses colors, shades, or patterns on geographic
-                        units to show proportionate quantities and magnitudes.
+                        <strong>コロプレスマップ (Choropleth maps)</strong>。地理的単位に色、濃淡、またはパターンを使用して、比例した量と大きさを示す地図。
                     </li>
                     <li>
-                        <strong>Tile grid maps</strong>. A map that uses a single square for each geographic unit to
-                        approximate the shape of the overall geography. There are variations on the tile grid map, such
-                        as hex grid maps (which use hexagons for each geographic unit) and Demers cartograms (which use
-                        differently sized squares for each geographic unit).
+                        <strong>タイルグリッドマップ (Tile grid
+                            maps)</strong>。各地理的単位に単一の正方形を使用して、全体の地理の形状を近似する地図。ヘックスグリッドマップ（各地理的単位に六角形を使用）やデマーズカルトグラム（各地理的単位に異なるサイズの正方形を使用）など、タイルグリッドマップにはバリエーションがあります。
                     </li>
                     <li>
-                        <strong>Point-based maps</strong>. Maps that use dots or other shapes to mark specific locations
-                        or show quantities on a map or, in the case of dot density maps, use such shapes to indicate an
-                        overall pattern of distribution.
+                        <strong>ポイントベースのマップ (Point-based
+                            maps)</strong>。点やその他の形状を使用して、地図上の特定の場所をマークしたり量を示したりする地図。ドット密度マップ（dot density
+                        maps）の場合は、そのような形状を使用して分布の全体的なパターンを示します。
                 </ul>
 
                 <img src="img/choropleth-and-tilemap.png" width="100%"
                     alt="Two maps, both showing the US poverty rate by state using a blue sequential color palette. The map on the left is a standard choropleth and the one on the right is a tile grid map.">
 
-                <p>A secondary, but also important, question to consider when creating a map is how to choose the
-                    intervals (or bins) that will shade or define the geographic units. Placing data into discrete
-                    categories is, at its core, an aggregation problem. By combining several states or counties into a
-                    single bin, the reader cannot clearly distinguish how different the values are from one another.
+                <p>地図を作成する際に考慮すべき2番目に重要ですが重要な質問は、地理的単位をシェーディングまたは定義する間隔（またはビン）をどのように選択するかです。データを離散的なカテゴリに配置することは、本質的には集計の問題です。いくつかの州や郡を単一のビンに結合すると、読者は値が互いにどの程度異なるかを明確に区別できなくなります。
                 </p>
 
-                <p>There are four primary binning methods for maps:</p>
+                <p>地図の主なビン分割方法は4つあります。</p>
                 <ul>
                     <li>
-                        <strong>No Bins</strong>. Essentially a continuous color palette (or “ramp”) in which each data
-                        value receives a unique color tone.
+                        <strong>ビンなし (No Bins)</strong>。本質的には連続したカラーパレット（または「ランプ」）であり、各データ値は独自の色調を受け取ります。
                     </li>
                     <li>
-                        <strong>Equal Interval Bins</strong>. In this approach, the data are divided into equally-sized
-                        groups, such as 1-25, 26-50, 51-75, and 76-100.
+                        <strong>等間隔ビン (Equal Interval
+                            Bins)</strong>。このアプローチでは、データは1-25、26-50、51-75、76-100のように等しいサイズのグループに分割されます。
                     </li>
                     <li>
-                        <strong>Data Distribution Bins</strong>. Instead of having a bin at equal intervals, the bins
-                        can be arranged to hold the same number of observations, such as quartiles or quintiles.
+                        <strong>データ分布ビン (Data Distribution
+                            Bins)</strong>。等間隔でビンを設定する代わりに、四分位数や五分位数など、同じ数の観測値を保持するようにビンを配置できます。
                     </li>
                     <li>
-                        <strong>Arbitrary Bins</strong>. Here, the map creator chooses the bin cutoffs based on round
-                        numbers, natural breaks, or some other arbitrary criterion.
+                        <strong>任意のビン (Arbitrary
+                            Bins)</strong>。ここでは、地図作成者が丸められた数字、自然な区切り、またはその他の任意の基準に基づいてビンのカットオフを選択します。
                     </li>
                 </ul>
 
                 <img src="img/bins-for-maps.png"
                     alt="Four different binning methods for maps: continuous, equal interval, quantile, and arbitrary.">
 
-                <h3>Map Colors</h3>
+                <h3>地図の色 (Map Colors)</h3>
 
-                <p>Maps should follow the same basic rules as other graphics when it comes to colors. <a
-                        href="https://en.wikipedia.org/wiki/Choropleth_map" target="_blank">Choropleth maps</a>, or maps
-                    that show the magnitude of a variable, should normally use the blue sequential color ramp. </p>
+                <p>地図は、色に関しては他のグラフィックと同じ基本ルールに従う必要があります。<a href="https://en.wikipedia.org/wiki/Choropleth_map"
+                        target="_blank">コロプレスマップ</a>、つまり変数の大きさを示す地図は、通常、青のシーケンシャルカラーランプを使用する必要があります。</p>
 
-                <p>Sometimes, a map needs to <a href="http://apps.urban.org/features/mapping-americas-futures/"
-                        target="_blank">display change in a positive and negative way</a>. In those cases, a diverging
-                    color palette works best. When using a diverging palette, be sure to clearly label the midpoint.
+                <p>場合によっては、地図で<a href="http://apps.urban.org/features/mapping-americas-futures/"
+                        target="_blank">変化を正と負の方法で表示する</a>必要があります。そのような場合は、発散カラーパレットが最適です。発散パレットを使用する場合は、中間点を明確にラベル付けしてください。
                 </p>
 
                 <div class="multi-group-container">
@@ -3175,8 +3141,7 @@
                 <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
                 </script>
 
-                <p>Special palettes are sometimes required for specific projects or use cases. In such instances,
-                    contact the data visualization and design teams to work towards a solution.</p>
+                <p>特定のプロジェクトやユースケースでは、特別なパレットが必要になる場合があります。そのような場合は、データ視覚化およびデザインチームに連絡して解決策を検討してください。</p>
                 <div class="multi-group-container"></div>
                 <div class="color eight">
                     <div class="swatch groupcolor magenta-7 dark">
@@ -3204,22 +3169,22 @@
                     </div>
                 </div>
                 <div class="color  eight">
-                    <div class="swatch groupcolor green-3 ">
+                    <div class="swatch groupcolor green-3">
                         <div class="color-code"></div>
                     </div>
                 </div>
                 <div class="color  eight">
-                    <div class="swatch groupcolor green-6 dark">
+                    <div class="swatch groupcolor green-6  dark">
                         <div class="color-code"></div>
                     </div>
                 </div>
                 <div class="color  eight">
-                    <div class="swatch groupcolor green-7 dark">
+                    <div class="swatch groupcolor green-7  dark">
                         <div class="color-code"></div>
                     </div>
                 </div>
-                <p class="color-code-hex">var colors=["#761548", "#AF1F6B", "#E46AA7", "#EB99C2","#BCDEB4", "#98CF90",
-                    "#408941","#2C5C2D"];</p>
+                <p class="color-code-hex">var
+                    colors=["#db2b27","#e35d5a","#f2a6a4","#f5cbca","#d6e6d1","#a3cca3","#458f45","#295c29"];</p>
             </div>
 
 
@@ -3234,172 +3199,156 @@
     <section id="tables" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
-                <h2>Tables</h2>
+                <h2>表 (Tables)</h2>
 
-                <p>Tables are a unique form of visualizing data because, unlike many charts and graphs, they are not
-                    usually intended to give a quick, visual representation of data. Instead, tables are useful when you
-                    want to show the exact values of your data or estimates. They are not the best solution if you want
-                    to show a lot of data or if you want to show the data in a compact space. A well-designed table can
-                    help your reader find specific numbers and discover patterns and outliers. </p>
+                <p>
+                    表は、多くのチャートやグラフとは異なり、通常はデータの迅速で視覚的な表現を提供することを意図していないため、データを視覚化する独自の形式です。代わりに、表はデータの正確な値や推定値を示したい場合に役立ちます。大量のデータを示したい場合や、データをコンパクトなスペースに表示したい場合は、最適な解決策ではありません。適切に設計された表は、読者が特定の数値を見つけ、パターンや外れ値を発見するのに役立ちます。
+                </p>
 
-                <h3>Urban Styles</h3>
-                <p>As with Urban charts, Urban tables follow style guidelines for font styles, font sizes, number
-                    formatting, number alignment, and cell/row/column shading. Each of these components has specific
-                    styling guidelines that make Urban visualizations look specific and consistent. Formatting differs
-                    slightly for PDF and web tables, as listed below. When built in Excel, tables are generally
-                    structured as shown below. </p>
+                <h3>Urbanのスタイル (Urban Styles)</h3>
+                <p>
+                    Urbanのチャートと同様に、Urbanの表は、フォントスタイル、フォントサイズ、数値の書式設定、数値の配置、およびセル/行/列のシェーディングに関するスタイルガイドラインに従います。これらの各コンポーネントには、Urbanの視覚化を具体的かつ一貫性のある外観にするための特定のスタイルガイドラインがあります。書式設定は、以下に示すように、PDFとWebの表でわずかに異なります。Excelで作成する場合、表は通常、以下のように構成されます。
+                </p>
 
-                <h3>Tables for PDF Products </h3>
-                <p>For tables that appear in Urban Word templates — which can be found on the <a
-                        href="https://explorer.urban.org/page/2229" target="_blank">Urban intranet</a> — the built-in
-                    Urban styles will automatically apply the correct formatting. You can use these styles as you create
-                    tables, or your editor can apply the styles during the editing process. The default styles in Word
-                    can be found in the <em>Home > Styles</em> tab of the ribbon. </p>
+                <h3>PDF製品用の表 (Tables for PDF Products)</h3>
+                <p>
+                    <a href="https://explorer.urban.org/page/2229"
+                        target="_blank">Urbanのイントラネット</a>にあるUrbanのWordテンプレートに表示される表の場合、組み込みのUrbanスタイルによって正しい書式が自動的に適用されます。表を作成するときにこれらのスタイルを使用するか、編集プロセス中に編集者がスタイルを適用できます。Wordのデフォルトのスタイルは、リボンの<em>[ホーム]
+                        > [スタイル]</em>タブにあります。
+                </p>
 
-                <h3>Table size and formatting </h3>
+                <h3>表のサイズと書式設定 (Table size and formatting)</h3>
                 <ul>
                     <li>
-                        Tables should be full width, which is 6.25 inches in PDF products, with the following
-                        exceptions:
+                        表は全幅（PDF製品では6.25インチ）である必要があります。ただし、次の例外があります。
                     </li>
                     <li>
-                        Smaller tables can be 3.13 inches or 4.69 inches (i.e., 50 or 75 percent of the page width)
+                        小さな表は3.13インチまたは4.69インチ（つまり、ページ幅の50％または75％）にすることができます。
                     </li>
                     <li>
-                        Tables on landscape pages, such as in an appendix, can be 8.67 inches (100 percent of the page
-                        width)
+                        付録などの横向きページの表は、8.67インチ（ページ幅の100％）にすることができます。
                     </li>
                     <li>
-                        Tables should have no empty columns or rows. The built in Urban styles will automatically apply
-                        the appropriate line spacing between table rows.
+                        表には空の列や行を含めないでください。組み込みのUrbanスタイルは、表の行間に適切な行間隔を自動的に適用します。
                     </li>
                     <li>
-                        Urban style uses a 1pt black border beneath all column headings and the last row in a table. The
-                        default Urban style is to use no borders within a table; however, if needed, column or row
-                        borders can be used to increase readability. The style of (vertical) column borders is 1 pt,
-                        black. The style of (horizontal) row borders is 1 pt, round dot, and a color of 217 217 217
-                        (light gray).
+                        Urbanスタイルでは、すべての列見出しと表の最後の行の下に1ptの黒い境界線を使用します。デフォルトのUrbanスタイルでは、表内に境界線を使用しませんが、必要に応じて、読みやすさを向上させるために列または行の境界線を使用できます。（垂直）列の境界線のスタイルは1pt、黒です。（水平）行の境界線のスタイルは1pt、丸い点線、色は217
+                        217 217（明るい灰色）です。
                     </li>
                 </ul>
 
-                <h3>Table Text Styling for Urban Reports </h3>
+                <h3>Urbanレポート用の表テキストのスタイリング (Table Text Styling for Urban Reports)</h3>
 
-                <h4>Title</h4>
+                <h4>タイトル (Title)</h4>
                 <ul>
                     <li>
-                        Headline capitalization, e.g., “Would Rolling Up Programs Conflate Different Outcomes?” rather
-                        than “Would rolling up programs conflate different outcomes”?
+                        見出しの大文字化（Headline capitalization）。例：“Would rolling up programs conflate different outcomes”?
+                        ではなく “Would Rolling Up Programs Conflate Different Outcomes?” とします。
                     </li>
                     <li>
-                        Keep text concise and use active voice
+                        テキストを簡潔にし、能動態を使用します。
                     </li>
                     <li>
-                        Figure/Table Title style (see list below)
+                        Figure/Table Title スタイル（以下のリストを参照）を使用します。
                     </li>
                 </ul>
 
-                <h4>Subtitle </h4>
+                <h4>サブタイトル (Subtitle)</h4>
                 <ul>
                     <li>
-                        Subtitles are optional in Urban tables and figures and can be used to list units or add
-                        contextual information. Keep text concise and use active voice.
+                        サブタイトルはUrbanの表や図ではオプションであり、単位をリストしたり、コンテキスト情報を追加したりするために使用できます。テキストを簡潔にし、能動態を使用します。
                     </li>
                     <li>
-                        Sentence capitalization (first word and proper nouns capitalized)
+                        文の大文字化（Sentence capitalization：最初の単語と固有名詞を大文字にする）。
                     </li>
                     <li>
-                        Figure/Table Subtitle style
+                        Figure/Table Subtitle スタイルを使用します。
                     </li>
                 </ul>
 
-                <h4>Column headings </h4>
+                <h4>列見出し (Column headings)</h4>
                 <ul>
                     <li>
-                        Use sentence capitalization for all column headings except for spanner headings, which use
-                        headline capitalization. Set supra-spanner headings in small caps.
+                        スパナ見出し（spanner headings）を除くすべての列見出しには、文の大文字化（Sentence
+                        capitalization）を使用します。スパナ見出しには見出しの大文字化（Headline capitalization）を使用します。スープラスパナ見出し（supra-spanner
+                        headings）はスモールキャピタルで設定します。
                     </li>
                     <li>
-                        Use spanner headings for units of measurement that apply to multiple cells. (Unless your
-                        document must be 508-compliant, in which case avoid using spanner headings altogether).
+                        複数のセルに適用される測定単位には、スパナ見出しを使用します。（ドキュメントが政府の508準拠である必要がある場合を除く。その場合は、スパナ見出しの使用を完全に避けてください）。
                     </li>
                     <li>
-                        Table Column Heading style to all column headings and spanner headings.
+                        すべての列見出しとスパナ見出しに Table Column Heading スタイルを使用します。
                     </li>
                 </ul>
 
-                <h4>Row headings </h4>
+                <h4>行見出し (Row headings)</h4>
                 <ul>
                     <li>
-                        Use row headings when contextual information applies to more than one row.
+                        コンテキスト情報が複数の行に適用される場合は、行見出しを使用します。
                     </li>
                     <li>
-                        Table Row Heading style (row subheadings use the same style)
+                        Table Row Heading スタイルを使用します（行の小見出しも同じスタイルを使用します）。
                     </li>
                 </ul>
 
-                <h4>Cell contents </h4>
+                <h4>セルの内容 (Cell contents)</h4>
                 <ul>
                     <li>
-                        All cell data should be decimal aligned
+                        すべてのセルデータは小数点の位置で揃える必要があります。
                     </li>
                     <li>
-                        Where possible, keep similar cells to similar widths, making exceptions to accommodate lengthy
-                        cells or column headings
+                        可能であれば、類似したセルを類似した幅に保ちますが、長いセルや列見出しに対応するために例外を設けます。
                     </li>
                     <li>
-                        Data cells should be aligned bottom right
+                        データセルは右下揃えにする必要があります。
                     </li>
                     <li>
-                        Text cells should be aligned bottom left
+                        テキストセルは左下揃えにする必要があります。
                     </li>
                     <li>
-                        Table Row style for numerical cells
+                        数値セルには Table Row スタイルを使用します。
                     </li>
                     <li>
-                        Table Text style for text cells
+                        テキストセルには Table Text スタイルを使用します。
                     </li>
                 </ul>
 
-                <h4>Source and notes</h4>
+                <h4>出典と注釈 (Source and notes)</h4>
                 <ul>
                     <li>
-                        Like figures, all tables must have a source line
+                        図と同様に、すべての表には出典行（source line）が必要です。
                     </li>
                     <li>
-                        The notes line can include notes applying to the whole table, notes for a particular row or
-                        column (use superscripted letters), and notes on significance levels (use asterisks). More
-                        details:
+                        注釈行には、表全体に適用される注釈、特定の行または列の注釈（上付き文字を使用）、および有意水準に関する注釈（アスタリスクを使用）を含めることができます。詳細：
                     </li>
                     <li>
-                        Use asterisk to indicate statistical significance, use em dash to indicate missing values, and
-                        use caret symbol to indicate masked values. </li>
+                        統計的有意性を示すにはアスタリスク（*）を使用し、欠損値を示すにはエムダッシュ（—）を使用し、マスクされた値を示すにはキャレット記号（^）を使用します。
+                    </li>
                     <li>
-                        Define all abbreviations or symbols in notes.</li>
+                        すべての略語や記号を注釈で定義します。
+                    </li>
                     <li>
-                        Use superscript letters to denote notes, even when only one note appears in a table. However,
-                        numerals may be used for tables whose data consist mainly of words or letters; and symbols may
-                        be used for tables that include mathematical or chemical equations, where superscript letters or
-                        numerals might be mistaken for exponents. When symbols are used, the sequence is as follows:
+                        表に注釈が1つしか表示されない場合でも、注釈を示すために上付き文字を使用します。ただし、データが主に単語や文字で構成されている表の場合は数字を使用できます。また、数式や化学方程式を含む表の場合は、上付き文字や数字が指数と間違われる可能性があるため、記号を使用できます。記号を使用する場合、順序は次のとおりです。
                     </li>
                     <ol>
-                        <li> * (asterisk; but do not use if p values occur in the table; see 3.81)
+                        <li> * (アスタリスク; ただし、表にp値が含まれる場合は使用しない; 3.81を参照)
                         </li>
-                        <li> † (dagger)
+                        <li> † (ダガー)
                         </li>
-                        <li> ‡ (double dagger)
+                        <li> ‡ (ダブルダガー)
                         </li>
-                        <li> § (section mark)
+                        <li> § (セクション記号)
                         </li>
-                        <li> || (parallels)
+                        <li> || (パラレル)
                         </li>
-                        <li> # (number sign, or pound) </li>
+                        <li> # (番号記号またはポンド) </li>
                     </ol>
                     <li>
-                        Figure/Table Notes style
+                        Figure/Table Notes スタイルを使用します。
                     </li>
                 </ul>
 
-                <h3>Styles section of Home tab in Microsoft Word</h3>
+                <h3>Microsoft Wordの[ホーム]タブの[スタイル]セクション</h3>
                 <h4>PC</h4>
                 <img src="img/table-styles-pc.png" width="50%"
                     alt="Screenshot of the style section of the home tab in Microsoft Word on a PC.">
@@ -3407,19 +3356,21 @@
                 <img src="img/table-styles-mac.png" width="50%"
                     alt="Screenshot of the style section of the home tab in Microsoft Word on a Mac.">
 
-                <h3>Tables for the Web </h3>
-                <p>Tables for the Urban website—including the Urban Wire and Data at Urban blogs—should follow the
-                    formatting shown in the images below. Many figures and tables for the Urban Wire blog are built in
-                    the Datawrapper tool; contact the data visualization or blog team for assistance. </p>
+                <h3>Web用の表 (Tables for the Web)</h3>
+                <p>
+                    Urban WireやData at Urbanブログを含むUrbanのWebサイト用の表は、以下の画像に示す書式に従う必要があります。Urban
+                    Wireブログの多くの図や表はDatawrapperツールで作成されています。支援が必要な場合は、データ視覚化チームまたはブログチームにお問い合わせください。
+                </p>
                 <img src="img/table-mockup.png" width="100%"
                     alt="Detailed diagram of the layout, font, font size, and color of the elements in an Urban Institute table.">
                 <img src="img/table-final.png" width="100%" style="padding-top: 5rem; padding-bottom: 5rem;"
                     alt="Detailed table showing the font, size, color, and alignment of all text types in an Urban Institute table.">
 
-                <p>There are many ways to make your tables more visual by adding icons, color shades, small charts, and
-                    more. For additional options, see <em><a
+                <p>
+                    アイコン、色の濃淡、小さなチャートなどを追加して、表をより視覚的にする方法はたくさんあります。その他のオプションについては、<em><a
                             href="https://www.cambridge.org/core/journals/journal-of-benefit-cost-analysis/article/abs/ten-guidelines-for-better-tables/74C6FD9FEB12038A52A95B9FBCA05A12"
-                            target="_blank">Ten Guidelines for Better Tables</a></em>. </p>
+                            target="_blank">Ten Guidelines for Better Tables（より良い表のための10のガイドライン）</a></em>を参照してください。
+                </p>
 
                 <img src="img/conditional-formatting.png" width="100%"
                     alt="Table showing the distribution of federal tax by cash income percentile in 2010 for six different metrics. Each column includes the number and a small bar chart.">
@@ -3433,9 +3384,9 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Additional resources</h2>
-                    <p class="text-center">Have a question or looking for more help? Contact <a
-                            href="mailto:jschwabish@urban.org">Jon Schwabish</a>.
+                    <h2>その他のリソース (Additional resources)</h2>
+                    <p class="text-center">質問がある場合や、さらにサポートが必要な場合は、 <a href="mailto:jschwabish@urban.org">Jon
+                            Schwabish</a> までご連絡ください。
                     </p>
                     <!--                    <p>Copyright Urban Institute 2015</p>-->
 
