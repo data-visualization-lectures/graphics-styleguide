@@ -2801,30 +2801,23 @@
 
             <div id="connected-scatterplots" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Connected Scatterplots <a href="#right-chart-mid">^</a></h3>
+                <h3>接続散布図 (Connected Scatterplots) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    In a standard scatterplot, each dot within the x–y space represents a unique observation, such as a
-                    county, state, or country. A connected scatterplot modifies this format by using dots to represent
-                    points in time and connecting them chronologically. This type of chart offers an alternative to
-                    plotting two time series on the same axis and is a clearer substitute for dual-axis line charts,
-                    which Urban does not publish.
+                    標準的な散布図では、x-y空間内の各ドットは郡、州、国などの一意の観測値を表します。接続散布図は、ドットを使用して時点を表し、それらを時系列で接続することによって、この形式を変更します。このタイプのチャートは、同じ軸上に2つの時系列をプロットする代わりとなるものであり、Urbanが公開していない二重軸折れ線グラフのより明確な代替手段です。
                 </p>
 
-                <h4>When to Use a Connected Scatterplot</h4>
+                <h4>接続散布図を使用する場合</h4>
                 <ul>
-                    <li>To show the relationship between two variables over time in a single graph, emphasizing how they
-                        change relative to each other.</li>
-                    <li>To highlight trends, cycles, or shifts in paired data points.</li>
+                    <li>1つのグラフで時間の経過に伴う2つの変数間の関係を示し、それらが互いにどのように変化するかを強調する場合。</li>
+                    <li>ペアのデータポイントの傾向、サイクル、またはシフトを強調する場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Good annotation is key to helping readers navigate a connected scatterplot. Evidence is mixed on
-                        whether and how such annotation works, and whether casual readers fully understand such graphs.
+                    <li>優れた注釈は、読者が接続散布図をナビゲートするのを助ける鍵です。そのような注釈が機能するかどうか、どのように機能するか、そしてカジュアルな読者がそのようなグラフを完全に理解しているかどうかについては、証拠が混在しています。
                     </li>
-                    <li>Connected scatterplots often end up looking jumbled and complex. In these cases, alternative
-                        approaches, like using two charts or normalizing the trends to a percentage change or index,
-                        often work better.</li>
+                    <li>接続散布図は、しばしば乱雑で複雑に見える結果になることがあります。このような場合、2つのチャートを使用したり、傾向を変化率やインデックスに正規化したりするなどの代替アプローチの方がうまくいくことがよくあります。
+                    </li>
                 </ul>
                 <img src="img/connected-scatterplot.png" width="100%" class="example-chart"
                     alt="Scatterplot showing the change in the relationship between the unemployment rate along the horizontal axis and the job vacancy rate along the vertical axis. The first segment, during the financial crisis, moves downward from the top-left to the bottom-right of the graph, thereafter moving back up towards the top-left part of the graph." />
@@ -2836,25 +2829,21 @@
 
             <div id="heatmaps" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Heatmaps <a href="#right-chart-mid">^</a></h3>
+                <h3>ヒートマップ (Heatmaps) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    A heatmap is useful for visualizing large datasets like correlation matrices or geographic data
-                    distributions.
+                    ヒートマップは、相関行列や地理データ分布などの大規模なデータセットを視覚化するのに役立ちます。
                 </p>
 
-                <h4>When to Use a Heatmap</h4>
+                <h4>ヒートマップを使用する場合</h4>
                 <ul>
-                    <li>To show data density or magnitude using color gradients, making it easy to identify patterns,
-                        correlations, or anomalies.</li>
+                    <li>色のグラデーションを使用してデータの密度や大きさを表示し、パターン、相関関係、または異常値を簡単に識別できるようにする場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Choose an appropriate color scale, whether sequential (i.e., light to dark) or diverging (i.e.,
-                        light to dark in two directions from a midpoint).</li>
-                    <li>Sort the data logically (e.g., by value, alphabetically, or chronologically) to make patterns
-                        clearer and easier to read.</li>
-                    <li>Heatmaps typically do not include data labels, but that is not a rule.</li>
+                    <li>適切なカラースケールを選択します。シーケンシャル（つまり、明るい色から暗い色へ）か、発散的（つまり、中間点から2方向に明るい色から暗い色へ）かを選択します。</li>
+                    <li>データを論理的（例：値順、アルファベット順、または時系列順）に並べ替えて、パターンをより明確にし、読みやすくします。</li>
+                    <li>ヒートマップには通常データラベルは含まれませんが、それはルールではありません。</li>
                 </ul>
                 <img src="img/heatmap.png" width="100%" class="example-chart"
                     alt="Table showing which states have designated disaster funds as of 2019, the amount of those funds in dollars, and the level of FEMA funding that would have been at risk in 2019. The last column shows the difference between the state and FEMA funding levels and is shaded in light blue for small differences to dark blue for large differences. " />
@@ -2868,25 +2857,22 @@
 
             <div id="beeswarm" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Beeswarm Charts <a href="#right-chart-mid">^</a></h3>
+                <h3>ビースウォームチャート (Beeswarm Charts) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    The beeswarm is a useful way to illustrate the distribution of your data by showing each data point.
+                    ビースウォームは、各データポイントを表示することでデータの分布を示す便利な方法です。
                 </p>
 
-                <h4>When to Use a Beeswarm Chart</h4>
+                <h4>ビースウォームチャートを使用する場合</h4>
                 <ul>
-                    <li>To display individual data points in a way that avoids overlap, making it clear where data
-                        clusters and spreads occur.</li>
+                    <li>重なりを避ける方法で個々のデータポイントを表示し、データのクラスターがどこにあり、どこに広がっているかを明確にする場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>If combining multiple groups into a beeswarm chart, sort the groups logically to help make the
-                        patterns clearer and easier to read.</li>
-                    <li>Too many data points will make the graph difficult to read and negate its purpose.</li>
-                    <li>Consider adding key annotations and labels to help explain the data. For example, use labels to
-                        describe outliers or important values.</li>
-                    <li>Use color to differentiate groups or values within the beeswarm.</li>
+                    <li>複数のグループをビースウォームチャートに組み合わせる場合は、グループを論理的に並べ替えて、パターンをより明確にし、読みやすくします。</li>
+                    <li>データポイントが多すぎると、グラフが読みにくくなり、その目的が失われます。</li>
+                    <li>データを説明するのに役立つ主要な注釈やラベルを追加することを検討してください。たとえば、外れ値や重要な値を説明するためにラベルを使用します。</li>
+                    <li>色を使用して、ビースウォーム内のグループまたは値を区別します。</li>
                 </ul>
                 <img src="img/beeswarm.png" width="100%" class="example-chart"
                     alt="Chart with hundreds of dots showing the percent of Black non-Hispanic households in a housing choice voucher program among public housing agencies with and without homeownership voucers." />
@@ -2900,30 +2886,23 @@
 
             <div id="box-whisker-plots" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Box-and-Whisker Plots <a href="#right-chart-mid">^</a></h3>
+                <h3>箱ひげ図 (Box-and-Whisker Plots) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    The box-and-whisker plot is a summary graph type showing select percentiles in the distribution. It
-                    is useful for showing easily understandable numbers—for example, the largest and smallest or means
-                    and medians.
+                    箱ひげ図は、分布内の選択されたパーセンタイルを示す要約グラフタイプです。最大値と最小値、または平均値と中央値など、理解しやすい数値を示すのに役立ちます。
                 </p>
                 <p>
-                    Keep in mind that some readers may be unfamiliar with statistical concepts (e.g., percentiles) and
-                    measures of uncertainty (e.g., confidence intervals). And, if it is important to show more aspects
-                    of the underlying data distribution, other chart types, like histograms or beeswarm charts, may be a
-                    better choice.
+                    一部の読者は、統計的概念（例：パーセンタイル）や不確実性の尺度（例：信頼区間）に不慣れな場合があることに留意してください。また、基礎となるデータ分布のより多くの側面を示すことが重要な場合は、ヒストグラムやビースウォームチャートなどの他のチャートタイプの方が適している場合があります。
                 </p>
 
-                <h4>When to Use a Box-and-Whisker Plot</h4>
+                <h4>箱ひげ図を使用する場合</h4>
                 <ul>
-                    <li>To summarize the distribution of data, showing medians, quartiles, and potential outliers.</li>
+                    <li>データの分布を要約し、中央値、四分位数、および潜在的な外れ値を示す場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Sort the data logically (e.g., by value, alphabetically, or chronologically) to make patterns
-                        clearer and easier to read.</li>
-                    <li>Be sure to define each point—e.g., 1st and 99th percentile or 10th and 90th percentile—in the
-                        plot.</li>
+                    <li>データを論理的（例：値順、アルファベット順、または時系列順）に並べ替えて、パターンをより明確にし、読みやすくします。</li>
+                    <li>プロット内の各ポイント（例：1パーセンタイルと99パーセンタイル、または10パーセンタイルと90パーセンタイル）を必ず定義してください。</li>
                 </ul>
                 <img src="img/box-and-whisker.png" width="100%" class="example-chart"
                     alt="Set of box-and-whisker plots that shows how land-use boards overrepresent white residents relative to the local population by showing different percentiles of the distribution of boards that are white." />
@@ -2937,23 +2916,19 @@
 
             <div id="fan-confidence-plots" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Fan or Confidence Interval Plots <a href="#right-chart-mid">^</a></h3>
+                <h3>ファンチャートまたは信頼区間プロット (Fan or Confidence Interval Plots) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    A fan or confidence interval chart is often used in forecasting or predictive modeling. Keep in mind
-                    that this chart shows select percentiles or confidence levels and that some readers may be
-                    unfamiliar with these statistical concepts.
+                    ファンチャートまたは信頼区間チャートは、予測または予測モデリングでよく使用されます。このチャートは、選択されたパーセンタイルまたは信頼水準を示しており、一部の読者はこれらの統計的概念に不慣れな場合があることに留意してください。
                 </p>
 
-                <h4>When to Use a Fan/Confidence Interval Plot</h4>
+                <h4>ファン/信頼区間プロットを使用する場合</h4>
                 <ul>
-                    <li>To display uncertainty or variability around a central estimate.</li>
+                    <li>中心推定値の周りの不確実性または変動性を表示する場合。</li>
                 </ul>
 
-                <h4>Style Tip</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Use color to visualize the move from higher levels of statistical confidence to lower levels.
-                        Typically, the values closest to the central estimate are the darkest, and the colors lighten as
-                        the values move outward.</li>
+                    <li>色を使用して、より高い統計的信頼水準からより低い水準への移動を視覚化します。通常、中心推定値に最も近い値が最も暗く、値が外側に移動するにつれて色が明るくなります。</li>
                 </ul>
                 <img src="img/fan-chart.png" width="100%" class="example-chart"
                     alt="Line chart that shows actual and projected gross domestic product between 2010 and 2027 where the projection years are shown with an set of blue areas denoting greater statistical uncertainty" />
@@ -2966,25 +2941,20 @@
 
             <div id="histograms" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Histograms <a href="#right-chart-mid">^</a></h3>
+                <h3>ヒストグラム (Histograms) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    A histogram groups values into bins, highlighting the frequency of occurrences. It can be useful for
-                    identifying patterns such as skewness, modality, or outliers in a dataset. The key consideration
-                    when creating a histogram is the number of bins to use; there is no “right” number, but there are
-                    statistical tests that can provide guidance.
+                    ヒストグラムは値をビンにグループ化し、発生頻度を強調します。データセット内の歪度、様相、または外れ値などのパターンを識別するのに役立ちます。ヒストグラムを作成する際の重要な考慮事項は、使用するビンの数です。「正しい」数はありませんが、ガイダンスを提供できる統計的検定があります。
                 </p>
 
-                <h4>When to Use a Histogram</h4>
+                <h4>ヒストグラムを使用する場合</h4>
                 <ul>
-                    <li>To visualize the distribution of continuous data while highlighting the frequency of
-                        occurrences.</li>
+                    <li>連続データの分布を視覚化しながら、発生頻度を強調する場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Use color transparency when overlaying histograms to help readers see where the distributions
-                        overlap.</li>
-                    <li>Ridgeline charts can be used when layering together multiple histograms.</li>
+                    <li>ヒストグラムを重ね合わせる場合は、読者が分布が重なっている場所を確認できるように、色の透明度を使用します。</li>
+                    <li>複数のヒストグラムを重ね合わせる場合は、リッジラインチャートを使用できます。</li>
                 </ul>
                 <img src="img/histogram.png" width="100%" class="example-chart"
                     alt="Vertical bar chart showing the distribution of the number of participants searching for housing by number of days from housing orientation to move-in." />
@@ -2998,25 +2968,20 @@
 
             <div id="strip-charts" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Strip Charts <a href="#right-chart-mid">^</a></h3>
+                <h3>ストリップチャート (Strip Charts) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    The strip chart is a variation on the beeswarm chart that jitters (i.e., slightly adjusts or shifts
-                    the position of the data points in a controlled way) many data points to make them all visible.
+                    ストリップチャートは、多くのデータポイントをすべて見えるようにするためにジッター（つまり、制御された方法でデータポイントの位置をわずかに調整またはシフト）させるビースウォームチャートのバリエーションです。
                 </p>
 
-                <h4>When to Use a Strip Chart</h4>
+                <h4>ストリップチャートを使用する場合</h4>
                 <ul>
-                    <li>To show individual data points along a single axis, sometimes with a slight jitter to avoid
-                        overlap.</li>
+                    <li>単一の軸に沿って個々のデータポイントを表示し、重なりを避けるためにわずかなジッターを加える場合。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Use semi-transparent dots (with solid outlines) to help visualize overlapping data points. This
-                        makes denser areas appear darker, highlighting patterns or clusters.</li>
-                    <li>Some of the points in a strip chart may overlap and may thus be obscured, but that will also
-                        make the pattern darker so that it becomes clearer where the bulk of observations lie in the
-                        distribution.</li>
+                    <li>固体の輪郭を持つ半透明のドットを使用して、重なり合うデータポイントを視覚化します。これにより、密度の高い領域が暗く見え、パターンやクラスターが強調されます。</li>
+                    <li>ストリップチャートの一部のポイントは重なり合って不明瞭になる可能性がありますが、それによりパターンが暗くなり、分布の観測値の大部分がどこにあるかが明確になります。</li>
                 </ul>
                 <img src="img/strip-chart.png" width="100%" class="example-chart"
                     alt="Strip charts showing the relationship between the opt-in rate and the absolute error across eight different demographic characteristics." />
