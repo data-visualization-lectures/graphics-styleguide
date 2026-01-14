@@ -470,7 +470,8 @@
                             <li>Macの場合、<em>Export</em> メニューはありません。代わりに、チャートをコピーし（<em>Command-C</em>）、<em>プレビュー</em>
                                 ツールを開いて、新規ファイルを作成します（<em>Command-N</em>）。チャートを保存し（<em>Command-S</em>）、ドロップダウンメニューを使用してファイル形式を
                                 <em>PNG</em> に変更します。そのメニューで、<em>解像度</em> を 600（ピクセル/インチ）に変更します。ファイル名を付けて <em>保存</em>
-                                をクリックします。</li>
+                                をクリックします。
+                            </li>
                         </ol>
                     </li>
                 </ol>
@@ -487,39 +488,33 @@
     <section id="urban-theme" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
-                <h2>Using the R Urban Theme</h2>
+                <h2>R用Urbanテーマの使用</h2>
 
-                <p><a href="https://urbaninstitute.github.io/urbnthemes/" target="_blank">urbnthemes</a> is a set of
-                    tools for creating Urban Institute–themed plots and maps in R (the theme has been tested against
-                    ggplot2 version 3.0.0; it will not function properly with older versions of ggplot2). The package
-                    extends ggplot2 with print and map themes as well as tools that make plotting easier. A
-                    comprehensive set of examples is available at the <a
+                <p><a href="https://urbaninstitute.github.io/urbnthemes/" target="_blank">urbnthemes</a>は、Urban
+                    Instituteのテーマに沿ったプロットや地図をRで作成するためのツールセットです（このテーマはggplot2バージョン3.0.0でテストされています。ggplot2の古いバージョンでは正しく機能しません）。このパッケージは、ggplot2を拡張して、出版物や地図用のテーマや、作図を容易にするツールを提供します。包括的な例のセットは、<a
                         href="https://urbaninstitute.github.io/r-at-urban/graphics-guide.html" target="_blank">Institute
-                        R Users Group website</a>.</p>
+                        R Users Groupのウェブサイト</a>で入手できます。</p>
 
-                <p><code>library(urbnthemes)</code> makes ggplot2 output align more closely with this style guide, but
-                    it does not produce publication-ready graphics. Visual styles must still be edited using your
-                    project’s normal editing workflow. Exporting charts as PDFs rather than image files (e.g., PNG,
-                    JPEG) will allow them to be edited more easily.</p>
+                <p><code>library(urbnthemes)</code>を使用すると、ggplot2の出力がこのスタイルガイドにより近くなりますが、そのまま出版可能なグラフィックが生成されるわけではありません。ビジュアルスタイルは、プロジェクトの通常の編集ワークフローを使用して編集する必要があります。チャートを画像ファイル（PNG、JPEGなど）ではなくPDFとしてエクスポートすると、編集が容易になります。
+                </p>
 
-                <p>Run the following code to install or update urbnthemes:<br />
+                <p>urbnthemesをインストールまたは更新するには、次のコードを実行してください:<br />
 
                     <code>install.packages("remotes")<br>
                 remotes::install_github("UrbanInstitute/urbnthemes")
                 </code>
                 </p>
 
-                <p>Run the following code at the top of each script:<br />
+                <p>各スクリプトの冒頭で次のコードを実行してください:<br />
 
                     <code>library(tidyverse)<br>
                 library(urbnthemes)<br>
                 set_urbn_defaults(style = "print")
                 </code>
                 </p>
-                <p>A comprehensive review, installation instructions, and more details and tutorials about using R at
-                    Urban and the <code>urbnthemes</code> package can be found in the <a
+                <p>UrbanでのRの使用や<code>urbnthemes</code>パッケージに関する包括的なレビュー、インストール手順、詳細、チュートリアルは、<a
                         href="https://urbaninstitute.github.io/r-at-urban/graphics-guide.html" target="_blank">Urban
-                        Institute R Graphics Guide</a>.</p>
+                        Institute R Graphics Guide</a>に記載されています。</p>
 
             </div>
         </div>
@@ -534,24 +529,20 @@
     <section id="insert-figs" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
-                <h2>Inserting Figures into Urban Word Templates</h2>
+                <h2>Urban Wordテンプレートへの図の挿入</h2>
 
-                <p>Urban Microsoft Word templates have built-in formatting to ensure correct placement of figures. To
-                    insert a figure—either as an Excel graph or as an image exported from another tool like R—follows
-                    these steps:</p>
+                <p>UrbanのMicrosoft
+                    Wordテンプレートには、図を正しく配置するための組み込みフォーマットがあります。ExcelのグラフやRなどの他のツールからエクスポートされた画像として図を挿入するには、次の手順に従います。</p>
                 <ol>
-                    <li>Start with the most recent Word template for your product, which can be downloaded from Urban
-                        Explorer on the <a href="https://explorer.urban.org/page/3941" target="_blank">Publications
-                            Templates</a> intranet page. Delete the sample column chart.</li>
-                    <li>For each figure, copy and paste the figure template text from the figure number through the
-                        notes line (see image below). This will automatically apply the built-in styles to the text
-                        around the figure. </li>
-                    <li>Write out the figure number, title, and subtitle (delete the subtitle if needed) directly in the
-                        Word file (not in the Excel graph or image).</li>
-                    <li>Place your cursor directly before the ‘U’ in ‘Urban Institute’ and then paste your figure,
-                        choosing either “Use Destination Theme and Embed Workbook,” “Use Destination Theme and Link
-                        Data,” or “Paste Special … Microsoft Office Graphic Object.”</li>
-                    <li>Write out the Source and Notes beneath the figure.</li>
+                    <li>製品の最新のWordテンプレートから始めます。これは、イントラネットの<a href="https://explorer.urban.org/page/3941"
+                            target="_blank">Publications Templates</a>ページにあるUrban Explorerからダウンロードできます。サンプルの棒グラフを削除します。
+                    </li>
+                    <li>各図について、図番号から注釈行までの図テンプレートテキストをコピーして貼り付けます（下の画像を参照）。これにより、図の周囲のテキストに組み込みスタイルが自動的に適用されます。</li>
+                    <li>図番号、タイトル、サブタイトル（必要に応じてサブタイトルを削除）をWordファイルに直接書き込みます（Excelのグラフや画像内ではありません）。</li>
+                    <li>カーソルを「Urban
+                        Institute」の「U」の直前に置き、「貼り付け先のテーマを使用しブックを埋め込む」、「貼り付け先のテーマを使用しデータをリンクする」、または「形式を選択して貼り付け...
+                        Microsoft Office グラフィック オブジェクト」のいずれかを選択して図を貼り付けます。</li>
+                    <li>図の下にソースと注釈を書き込みます。</li>
                 </ol>
 
                 <img src="img/figure-word-template-insert.png" class="example-chart"
