@@ -2228,75 +2228,59 @@
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
 
-                <h2>Chart Examples</h2>
+                <h2>チャートの例</h2>
 
-                <p>The following examples use the Urban style and color guidelines to illustrate common chart types in
-                    Excel. To deconstruct any example, download the Excel Example Files file. The Excel add-in and the R
-                    theme will replicate (or closely replicate) these styles but may still require some additional
-                    manual edits. Over time, this list will grow to include more graph types and additional guidance.
+                <p>以下の例では、Urbanのスタイルと色のガイドラインを使用して、Excelでの一般的なチャートタイプを示しています。例を分解するには、Excelサンプルファイルをダウンロードしてください。ExcelアドインとRテーマは、これらのスタイルを複製（または厳密に複製）しますが、追加の手動編集が必要になる場合があります。今後、このリストには、より多くのグラフタイプと追加のガイダンスが含まれる予定です。
                 </p>
 
-                <h3>Excel examples file</h3>
+                <h3>Excelサンプルファイル</h3>
                 <a href="StyleGuideGraphs.xlsx">
-                    <button class="btn btn-primary">Download</button>
+                    <button class="btn btn-primary">ダウンロード</button>
                 </a>
 
-                <h3 id="bar-charts">Horizontal and Vertical Bar Charts <a href="#right-chart-mid">^</a></h3>
-                <p>In the Excel parlance, bar charts that are oriented vertically are called “column charts” and bar
-                    charts that are oriented horizontally are called “bar charts.” Both versions use a rectangle (or
-                    bar) as the core attribute to visualize the data. We use the term “bar charts” below to refer to
-                    both orientations. </p>
+                <h3 id="bar-charts">水平および垂直の棒グラフ <a href="#right-chart-mid">^</a></h3>
+                <p>Excelの用語では、垂直方向に配置された棒グラフは「縦棒グラフ (column charts)」、水平方向に配置された棒グラフは「横棒グラフ (bar
+                    charts)」と呼ばれます。どちらのバージョンも、データを可視化するためのコア属性として長方形（または棒）を使用します。以下では、両方の向きを指すために「棒グラフ」という用語を使用します。</p>
 
-                <h4>When to use a bar chart (horizontally- or vertically-oriented)</h4>
+                <h4>棒グラフを使用する場合（水平または垂直）</h4>
                 <ul>
-                    <li>To compare numerical values for different observations.
+                    <li>異なる観測値の数値を比較する場合。
                     </li>
-                    <li>To show relative amounts.
+                    <li>相対的な量を示す場合。
                     </li>
-                    <li>To break one numerical variable out into different subgroups with grouped or stacked bars or
-                        columns.
+                    <li>グループ化または積み上げ棒グラフ/縦棒グラフを使用して、1つの数値変数を異なるサブグループに分割する場合。
                     </li>
-                    <li>To show changes over time for a relatively small number of time points.
+                    <li>比較的少数の時点での経時的な変化を示す場合。
                     </li>
 
                 </ul>
 
-                <h4>Style tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Avoid 3D bars or columns.
+                    <li>3Dの棒や柱は避けてください。
                     </li>
-                    <li>The y-axis should start at zero <a
-                            href="http://qz.com/418083/its-ok-not-to-start-your-y-axis-at-zero/" target="_blank">(there
-                            are a few instances when it is okay for the y-axis not to start at zero)</a>, but with few
-                        exceptions, Urban style is to start all bar charts at zero.
+                    <li>y軸はゼロから始める必要があります <a href="http://qz.com/418083/its-ok-not-to-start-your-y-axis-at-zero/"
+                            target="_blank">（y軸がゼロから始まらなくてもよい場合もいくつかあります）</a>が、いくつかの例外を除き、すべての棒グラフをゼロから始めるのがUrbanのスタイルです。
                     </li>
-                    <li>The width of the bars should be about twice the width of the space between the bars (use the
-                        <em>Gap Width</em> format area in Excel).
+                    <li>棒の幅は、棒間のスペースの幅の約2倍にする必要があります（Excelの「要素の間隔 (Gap Width)」で調整）。
                     </li>
-                    <li>If all the bars measure the same variable, make them all the same color. Using different colors
-                        is an unnecessary element on the chart. When directly labeling the bars, consider eliminating
-                        the horizontal gridlines and y-axis labels as they add unnecessary elements to the chart.
+                    <li>すべての棒が同じ変数を測定している場合は、すべて同じ色にします。異なる色を使用することは、チャート上の不要な要素です。棒に直接ラベルを付ける場合は、水平グリッド線とy軸ラベルを削除することを検討してください。これらはチャートに不要な要素を追加するためです。
                     </li>
-                    <li>Sequential series can be shaded from lightest to darkest for easy comparison.
+                    <li>シーケンシャル（順序）シリーズは、比較しやすいように、最も明るい色から最も暗い色へと濃淡をつけることができます。
                     </li>
-                    <li>To differentiate subsets of data, projections, or averages, consider using a different color
-                        shade or gray.
+                    <li>データのサブセット、予測、または平均を区別するには、別の色合いやグレーを使用することを検討してください。
                     </li>
-                    <li>Legends should be stretched across the top of the chart and the order of the legend entries
-                        should match the order in the chart.
+                    <li>凡例はチャートの上部に配置し、凡例エントリの順序はチャート内の順序と一致させる必要があります。
                     </li>
-                    <li>When data labels are included—typically just outside the ends of the bars—Urban style is to omit
-                        y-axis labels and gridlines (see examples below).
+                    <li>データラベルが含まれる場合（通常は棒の端のすぐ外側）、Urbanのスタイルではy軸のラベルとグリッド線を省略します（以下の例を参照）。
                     </li>
-                    <li>In the second graph below, notice the use of the black color for the bar measuring the “Overall”
-                        results to differentiate it from the other categories. Also notice the alphabetical ordering of
-                        racial groups. For alternative sorting strategies for demographic data, see the Urban
-                        Institute’s Do No Harm Project.
+                    <li>以下の2番目のグラフでは、「全体
+                        (Overall)」の結果を測定する棒に黒色を使用して、他のカテゴリと区別していることに注目してください。また、人種グループのアルファベット順にも注目してください。人口統計データの代替並べ替え戦略については、Urban
+                        InstituteのDo No Harm Projectを参照してください。
                     </li>
                     <li>
-                        The text box for <strong>Sources</strong> and <strong>Notes</strong> may need to be adjusted
-                        manually to fit all of the text. For web graphics, Urban style is to try to align the top of
-                        that text box with the Urban logo.
+                        <strong>ソース (Sources)</strong>と<strong>注
+                            (Notes)</strong>のテキストボックスは、すべてのテキストに合わせて手動で調整する必要がある場合があります。Webグラフィックスの場合、Urbanのスタイルはそのテキストボックスの上部をUrbanのロゴに合わせるように努めることです。
                     </li>
                 </ul>
 
@@ -2307,41 +2291,34 @@
                     alt="Vertical bar chart showing the student loan delinquency rate in areas with majority racial or ethnic groups. The chart shows that predominantly American Indian and Alaska Native, Black, and Hispanic communities are disproportionately burdened by student debt" />
                 <br />&nbsp;<br />
 
-                <h4>When to use a horizontal bar chart specifically</h4>
+                <h4>特に横棒グラフを使用する場合</h4>
 
                 <ul>
-                    <li>Horizontal bar charts are especially useful when long labels would make the text vertical or
-                        oddly-oriented in a vertical bar chart.
+                    <li>横棒グラフは、ラベルが長いために縦棒グラフではテキストが垂直になったり、奇妙な向きになったりする場合に特に役立ちます。
                     </li>
                     <li>
-                        When using a horizontal bar chart, right-align the category labels and center them vertically
-                        with the respect to the bar.
+                        横棒グラフを使用する場合は、カテゴリラベルを右揃えにし、棒に対して垂直方向の中央に配置します。
                     </li>
                     <li>
-                        Same styling decisions for vertical bar charts apply to horizontal bar charts.
+                        縦棒グラフと同じスタイリングの決定が横棒グラフにも適用されます。
                     </li>
                 </ul>
 
 
-                <h4>Paired Bar Charts</h4>
+                <h4>ペア棒グラフ (Paired Bar Charts)</h4>
 
-                <h5>When to use a paired bar chart </h5>
+                <h5>ペア棒グラフを使用する場合</h5>
                 <ul>
-                    <li>When you want to compare different groups or show the change in the composition of groups over
-                        time, but the data is not in a continuous time series.
+                    <li>異なるグループを比較したい場合、またはグループ構成の経時的な変化を示したいが、データが連続した時系列ではない場合。
                     </li>
                     <li>
-                        To display the part-to-whole relationship of categories, as well as totals.
+                        カテゴリの全体に対する部分の関係と、合計を表示する場合。
                     </li>
                     <li>
-                        Relative to stacked bar charts (see next section) where some series do not sit on a consistent
-                        horizontal baseline, this version makes it easier to see the change in individual series across
-                        categories. It is also easier to compare series within the same category, allowing a better
-                        visual understanding of the part-to-whole relationship of any one data point.
+                        一部のシリーズが一貫した水平ベースライン上にない積み上げ棒グラフ（次のセクションを参照）と比較して、このバージョンではカテゴリ間の個々のシリーズの変化を簡単に確認できます。また、同じカテゴリ内のシリーズを比較することも容易になり、任意の1つのデータポイントの全体に対する部分の関係をよりよく視覚的に理解できます。
                     </li>
                     <li>
-                        In cases where large values hide some of the variation for smaller values, consider using more
-                        than one chart.
+                        大きな値が小さな値の変動の一部を隠してしまう場合は、複数のチャートを使用することを検討してください。
                     </li>
                 </ul>
 
@@ -2351,39 +2328,34 @@
                 <br />&nbsp;<br />
 
 
-                <h4 id="stacked-bar-charts">Stacked Bar Charts</h4>
+                <h4 id="stacked-bar-charts">積み上げ棒グラフ (Stacked Bar Charts)</h4>
 
-                <h5>When to use a stacked bar chart </h5>
+                <h5>積み上げ棒グラフを使用する場合</h5>
                 <ul>
                     <li>
-                        When you want to compare different groups or show the change in the composition of groups over
-                        time, but the data is not in a continuous time series.
+                        異なるグループを比較したい場合、またはグループ構成の経時的な変化を示したいが、データが連続した時系列ではない場合。
                     </li>
                     <li>
-                        To display the part-to-whole relationship of categories, as well as totals.
+                        カテゴリの全体に対する部分の関係と、合計を表示する場合。
                     </li>
                 </ul>
 
-                <h5>Style tips </h5>
+                <h5>スタイルのヒント</h5>
                 <ul>
                     <li>
-                        Again, the axis in a bar chart should always start at zero.
+                        繰り返しになりますが、棒グラフの軸は常にゼロから始まる必要があります。
                     </li>
                     <li>
-                        In a single chart, avoid plotting too many series—more than five or six—because too many
-                        categories generate a confusing picture.
+                        1つのチャートにあまりにも多くのシリーズ（5つか6つ以上）をプロットすることは避けてください。カテゴリが多すぎると、混乱を招く図になります。
                     </li>
                     <li>
-                        Sequential series can be shaded from lightest to darkest for easy comparison.
+                        シーケンシャル（順序）シリーズは、比較しやすいように、最も明るい色から最も暗い色へと濃淡をつけることができます。
                     </li>
                     <li>
-                        Order the segments of the chart in a logical fashion. It is easier for readers to compare values
-                        for the series that sits directly on the horizontal or vertical axis—because the baseline
-                        doesn’t change over time. Thus, that series should either be (a) the most important series or
-                        (b) the series with the largest values.
+                        チャートのセグメントを論理的な方法で順序付けます。水平軸または垂直軸に直接接しているシリーズの値は、ベースラインが経時的に変化しないため、読者が比較するのが容易です。したがって、そのシリーズは
+                        (a) 最も重要なシリーズ、または (b) 最大の値を持つシリーズのいずれかであるべきです。
                         <ul>
-                            <li>That decision, however, should not override a logical ordering of the data, for example,
-                                age groups or educational attainment groups.
+                            <li>ただし、その決定によって、年齢層や学歴グループなどの論理的なデータの順序付けが上書きされるべきではありません。
                             </li>
                         </ul>
                     </li>
@@ -2401,30 +2373,24 @@
 
             <div id="dot-plots" class="col-lg-10 col-lg-offset-1">
                 <hr class="divider" />
-                <h3>Dot Plots <a href="#right-chart-mid">^</a></h3>
+                <h3>ドットプロット (Dot Plots) <a href="#right-chart-mid">^</a></h3>
                 <p>
-                    A dot plot is a graph type that uses dots or other shapes to represent individual data points along
-                    a single axis. Each dot corresponds to a value, and the dots are typically connected by a line or
-                    arrow. Dot plots are especially useful for comparing categories or groups, displaying distributions,
-                    or emphasizing individual points rather than aggregate values.
+                    ドットプロットは、単一の軸に沿って個々のデータポイントを表すためにドットやその他の形状を使用するグラフタイプです。各ドットは値に対応し、ドットは通常、線や矢印で接続されます。ドットプロットは、カテゴリやグループを比較したり、分布を表示したり、集計値ではなく個々のポイントを強調したりするのに特に役立ちます。
                 </p>
 
-                <h4>When to Use a Dot Plot</h4>
+                <h4>ドットプロットを使用する場合</h4>
                 <ul>
-                    <li>To compare different groups or show the change between two different points in time.</li>
-                    <li>As an alternative to paired bar charts; dot plots can make it easier for readers to make
-                        comparisons.</li>
+                    <li>異なるグループを比較したり、2つの異なる時点間の変化を示したりする場合。</li>
+                    <li>ペア棒グラフの代替として。ドットプロットは、読者が比較を行いやすくすることができます。</li>
                 </ul>
 
-                <h4>Style Tips</h4>
+                <h4>スタイルのヒント</h4>
                 <ul>
-                    <li>Dot plots should generally be limited to two dots per group or observation; more than two can
-                        make the graph difficult to read. In addition, if the order of the dots differs between groups,
-                        readers can find dot plots difficult to navigate.</li>
-                    <li>When using a dot plot to show change over time, consider using an arrow to help illustrate the
-                        direction of the change instead of a line.</li>
-                    <li>Labels can be added to the side, above, below, or even inside the dot. And while this chart type
-                        is named “dot plot,” the “dots” can be squares, icons, emojis, or other shapes.</li>
+                    <li>ドットプロットは通常、グループまたは観測ごとに2つのドットに制限する必要があります。2つ以上あると、グラフが読みにくくなる可能性があります。さらに、ドットの順序がグループ間で異なる場合、読者はドットプロットをナビゲートするのが難しいと感じる可能性があります。
+                    </li>
+                    <li>ドットプロットを使用して経時的な変化を示す場合は、線の代わりに矢印を使用して変化の方向を示すことを検討してください。</li>
+                    <li>ラベルは、ドットの横、上、下、または内側に追加できます。また、このチャートタイプは「ドットプロット」と呼ばれますが、「ドット」は正方形、アイコン、絵文字、またはその他の形状にすることができます。
+                    </li>
                 </ul>
 
                 <img src="img/dot-plot.png" width="100%" class="example-chart"
